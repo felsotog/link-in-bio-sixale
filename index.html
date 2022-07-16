@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () =>{
+        VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.0,
+        color2: 0xff00f0,
+        wingSpan: 40.00,
+        separation: 100.00,
+        alignment: 77.00,
+        cohesion: 5.00,
+        quantity: 2.00
+        })
+
+        setTimeout(() => {
+            const main = document.querySelector('main')
+            main.style.opacity = 1
+            main.style.filter = 'blur(0px)'
+        })
+        
+    })
+    </script>
+
+    <title>Sixale</title>
+</head>
+<body>
+    <div id="vanta"></div>
+    <main class="animated">
+        <header>
+            <img src="./images/logo2.JPG" alt="">
+            <h1>@Sixale</h1>
+        </header>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/KlabeMorse" >
+                <img src="./images/youtube.png" alt="Youtube" width="25">
+                Youtube
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/sixaleone">    
+                <img src="./images/facebook.png" alt="Facebook" width="25">
+                Facebook
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/klabemorse">
+                <img src="./images/twitter.png" alt="Tiwitter" width="25">
+                Twitter
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/sixale_g/">
+                <img src="./images/instagram.png" alt="Instagram" width="25">
+                Instagram
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <img src="./images/tiktok.png" alt="Tik-Tok" width="25">
+                Tik Tok
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/sixaleoficial">
+                <img src="./images/telegram.png" alt="Telegram" width="25">
+                Telegram
+                </a>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/artist/6dtNzwghyL8lEcHE7KnETq?si=FMpsmclKQ9uTe7uuwIhpZQ&utm_source=native-share-menu">
+                <img src="./images/spotify.png" alt="Spotify" width="25">
+                Spotify
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
